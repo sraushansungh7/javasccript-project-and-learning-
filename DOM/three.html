@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     .bg{
+        background-color: #212121;
+        color: aliceblue;
+     }
+    </style>
+</head>
+<body class="bg">
+    <ul class="language">
+        <li>javascript</li>
+    </ul>
+    
+</body>
+<script>
+    function addLanaguage(langName){
+     const li=document.createElement('li');
+     li.innerHTML=`${langName}`
+     document.querySelector('.language').
+     appendChild(li)
+
+    }
+    addLanaguage("python")
+    addLanaguage("typescript")
+    function adoptilanaguage(langName){
+        const li =document.createElement('li')
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+
+    }
+    adoptilanaguage("jnnd")
+    //edit
+    const secondLang=document.querySelector("li:nth-child(2)")
+   const newli=document.createElement('li')
+   newli.textContent="mojo"
+   secondLang.replaceWith(newli)
+   //edit
+   const firstLang=document.querySelector("li:first-child")
+   firstLang.outerHTML='<li>Typescript<li>'
+
+    ///remove
+    const lastLang=document.querySelector('li:last-child')
+    lastLang.remove()
+</script>
+</html>

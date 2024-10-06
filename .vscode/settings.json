@@ -1,0 +1,7 @@
+{
+    "livePreview.customExternalBrowser": "Chrome",
+    "liveServer.settings.fullReload": true,
+    "livePreview.defaultPreviewPath": " http://127.0.0.1:3000/",
+    "livePreview.showServerStatusNotifications": true,
+    "livePreview.tasks.runTaskWithExternalPreview": true
+}
